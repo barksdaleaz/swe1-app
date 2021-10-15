@@ -1,3 +1,5 @@
 language: python
 rvm:
 script: python manage.py
+after_success:
+  - coveralls

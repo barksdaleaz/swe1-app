@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-require 'coveralls'
-Coveralls.wear!
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
