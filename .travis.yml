@@ -1,5 +1,9 @@
 language: python
-rvm:
-script: python manage.py
+before-install:
+  - pip install flake8
+  - pip install black
+script:
+  - flake8 --max-line-length=92
+  - black C:\Users\barks\Documents\GitHub\swe1-app
 after_success:
   - coveralls
